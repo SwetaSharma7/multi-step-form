@@ -13,10 +13,135 @@
 
     <title>Multi-step form</title>
   </head>
-  <body>
-    
-    
 
-    <style src="index.js"></style>
+  <body>
+    <div class="container1">
+      <div class="btn">
+        <div id="btn1">1</div>
+        <div id="btn2">2</div>
+        <div id="btn3">3</div>
+        <div id="btn4">4</div>
+      </div>
+      <div class="section1">
+        <h1>Personal info</h1>
+        <p>Please provide your name, emai address, and phone number.</p>
+        <form action="#" method="post">
+          <label for="name">Name</label><br />
+          <input type="text" id="name" name="name" placeholder="e.g. Stephen King" required /><br />
+          <label for="email">Email Address</label><br />
+          <input type="email " id="email" name="email" placeholder="e.g. Stephenking@lorem.com" required /><br />
+          <label for="phone">Phone Number</label><br />
+          <input form="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 890" required /><br />
+        </form>
+      </div>
+
+      <div class="section2">
+        <h1>Select your plan</h1>
+        <p>You have the option of monthly or yearly biling.</p>
+        <div class="cards">
+          <div class="card">
+            <img src="/assets/images/icon-arcade.svg" alt="" />
+            <div class="card-info">
+              <h4>Arcade</h4>
+              <p class="monthly">$9/mo</p>
+              <p class="yearly">
+                $90/mo <br />
+                2 months free
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/images/icon-advanced.svg" alt="" />
+            <div class="card-info">
+              <h4>Advanced</h4>
+              <p class="monthly">$12/mo</p>
+              <p class="yearly">
+                $1200/mo <br />
+                2 months free
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/images/icon-pro.svg" alt="" />
+            <div class="card-info">
+              <h4>Pro</h4>
+              <p class="monthly">$15/mo</p>
+              <p class="yearly">
+                $150/mo <br />
+                2 months free
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="option">
+          <h3>Monthly</h3>
+          <div class="toggler">
+            <input type="checkbox" id="check" />
+            <label for="check" class="toggler-btn" onclick="togglePrices()"></label>
+          </div>
+          <h3>Yearly</h3>
+        </div>
+      </div>
+
+      <!-- section 3 -->
+
+      <div class="section3">
+        <h1>Pick add-ons</h1>
+        <p>Add-ons help enhance your gaming experience.</p>
+        <div class="cards">
+          <div class="card2">
+            <input type="checkbox" id="checkId">
+            <label for="checkId" class="check-box" ></label>
+            <div class="card-info">
+              <h4>Online service</h4>
+              <p>Acess to multipliplayer games</p>
+            </div>
+            <p>+$1/mo</p>
+          </div>
+          <div class="card2">
+            <input type="checkbox" id="checkId">
+            <label for="checkId" class="check-box" ></label>
+            <div class="card-info">
+              <h4>Larger storage</h4>
+              <p>Extra 1TB of cloud save</p>
+            </div>
+            <p>+$2/mo</p>
+          </div>
+          <div class="card2">
+            <input type="checkbox" id="checkId">
+            <label for="checkId" class="check-box" ></label>
+            <div class="card-info">
+              <h4>Customizable profile</h4>
+              <p>Custom theme on your profile</p>
+            </div>
+            <p>+$2/mo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section4">
+        <h1>Finshing up</h1>
+        <p>Double-check everything looks OK before confirming.</p>
+      </div>
+
+      <div class="section5">
+        <img src="./assets/images/icon-thank-you.svg" alt="" />
+          <div class="header">
+            <h1 class="title">Thank you!</h1>
+            <p class="exp">
+              Thanks for confirming your subscription! We hope you have fun
+              using our platform. If you ever need support, please feel free to
+              email us at support@loremgaming.com.
+            </p>
+          </div>
+      </div>
+
+      <footer class="footer">
+        <button class="goBack">Go Back</button>
+        <button class="footer-btn">Next Step</button>
+      </footer>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>

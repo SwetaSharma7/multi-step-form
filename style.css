@@ -1,5 +1,250 @@
+:root {
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Purplish-blue: hsl(243, 100%, 62%);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsl(206, 94%, 87%);
+  --Strawberry-red: hsl(354, 84%, 57%);
+  --Cool-gray: hsl(231, 11%, 63%);
+  --Light-gray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Ubuntu", sans-serif;
+}
 
-body{
-    font-family: 'Ubuntu', sans-serif;
+/* MAIN CONTAINER */
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--Light-blue);
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/assets/images/bg-sidebar-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 2rem;
+}
+
+.btn div{
+  background-color: var(--Purplish-blue);
+  border-radius: 50%;
+  color: var(--Alabaster);
+  border: 1.5px solid white;
+  padding: 0.8rem 1.1rem;
+  font-weight: 700;
+}
+
+.btn button:hover {
+  color: var(--Marine-blue);
+  background-color: var(--Light-blue);
+}
+
+/* -----SECTION-1 (1st Page)-----*/
+
+.section1 {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--Alabaster);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  /* box-shadow: 0 203 ; */
+}
+
+h1 {
+  color: var(--Marine-blue);
+  margin-top: 0;
+}
+
+p {
+  color: var(--Cool-gray);
+  margin: 1rem 0;
+}
+
+form input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  font-size: medium;
+  border-radius: 0.3rem;
+  border: 1px solid gray;
+}
+
+form label {
+  color: var(--Marine-blue);
+}
+
+/* -----SECTION-2 (2nd Page)----- */
+
+.section2 {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  width: 90%;
+  padding: 5%;
+  text-align: left;
+  border-radius: 0.8rem;
+  background-color: var(--White);
+  margin: 15% 0;
+}
+.section2 .card {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(202, 188, 188);
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+.section2 .card:hover {
+  border: 1px solid rgb(9, 9, 114);
+  background-color: var(--Light-gray);
+}
+
+img {
+  width: 4rem;
+}
+
+.section2 .card .card-info {
+  display: flex;
+  flex-direction: column;
+}
+.card-info p {
+  margin: 0;
+}
+
+/* toggler btm */
+
+.section2 .option {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(243, 251, 255);
+  gap: 2rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler-btn {
+  height: 25px;
+  width: 45px;
+  background-color: black;
+  cursor: pointer;
+  position: relative;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.toggler-btn::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked + .toggler-btn::before {
+  transform: translate(21px);
+}
+
+/* ----section-3 (page-3)---- */
+
+.section3 {
+  display: flex;
+  display: none;
+  width: 90%;
+  padding: 5%;
+  border-radius: 1rem;
+  background-color: white;
+  margin: 15% 0;
+}
+
+.card2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -----section-4 (page-4)---- */
+.section4 {
+  display: none;
+  background-color: white;
+  width: 90%;
+}
+
+/* ----section-5 (thankyou page)----- */
+.section5{
+    display: none;
+}
+
+/*-----FOOTER-----  */
+
+.footer {
+  display: flex;
+  width: 100%;
+  background-color: var(--Magnolia);
+  justify-content: space-between;
+}
+
+footer .footer-btn ,
+.goBack{
+  background-color: var(--Marine-blue);
+  color: var(--Light-gray);
+  padding: 15px 20px;
+  border-radius: 6%;
+  border: none;
+  margin: 5%;
+  font-size: medium;
+  font-weight: 800;
+}
+
+footer .goBack{
+    color: var(--Cool-gray);
+    background-color: var(--White);
+}
+
+.yearly {
+  display: none;
 }
