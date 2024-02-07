@@ -12,3 +12,10 @@ btn.addEventListener("click" , (e) => {
         }
     }
 })
+
+
+
+.btn button:hover {
+  color: var(--Marine-blue);
+  background-color: var(--Light-blue);
+}

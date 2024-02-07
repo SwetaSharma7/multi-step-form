@@ -26,6 +26,7 @@
         <h1>Personal info</h1>
         <p>Please provide your name, emai address, and phone number.</p>
         <form action="#" method="post">
+          <!-- <label for="error">This is required</label><br> -->
           <label for="name">Name</label><br />
           <input type="text" id="name" name="name" placeholder="e.g. Stephen King" required /><br />
           <label for="email">Email Address</label><br />
@@ -39,10 +40,10 @@
         <h1>Select your plan</h1>
         <p>You have the option of monthly or yearly biling.</p>
         <div class="cards">
-          <div class="card">
+          <div class="card card1">
             <img src="/assets/images/icon-arcade.svg" alt="" />
             <div class="card-info">
-              <h4>Arcade</h4>
+              <h4 class="arcade">Arcade</h4>
               <p class="monthly">$9/mo</p>
               <p class="yearly">
                 $90/mo <br />
@@ -50,10 +51,10 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card card2">
             <img src="/assets/images/icon-advanced.svg" alt="" />
             <div class="card-info">
-              <h4>Advanced</h4>
+              <h4 class="advanced">Advanced</h4>
               <p class="monthly">$12/mo</p>
               <p class="yearly">
                 $1200/mo <br />
@@ -61,10 +62,10 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card card3">
             <img src="/assets/images/icon-pro.svg" alt="" />
             <div class="card-info">
-              <h4>Pro</h4>
+              <h4 class="pro">Pro</h4>
               <p class="monthly">$15/mo</p>
               <p class="yearly">
                 $150/mo <br />
@@ -89,28 +90,29 @@
       <div class="section3">
         <h1>Pick add-ons</h1>
         <p>Add-ons help enhance your gaming experience.</p>
-        <div class="cards">
-          <div class="card2">
-            <input type="checkbox" id="checkId">
-            <label for="checkId" class="check-box" ></label>
+        <div class="cards cardAddOn">
+          <div class="card-addOn card-addOn1">
+            <input type="checkbox" id="checkId1">
+            <label for="checkId1" class="check-box" ></label>
             <div class="card-info">
               <h4>Online service</h4>
               <p>Acess to multipliplayer games</p>
             </div>
             <p>+$1/mo</p>
+            
           </div>
-          <div class="card2">
-            <input type="checkbox" id="checkId">
-            <label for="checkId" class="check-box" ></label>
+          <div class="card-addOn card-addOn2">
+            <input type="checkbox" id="checkId2">
+            <label for="checkId2" class="check-box" ></label>
             <div class="card-info">
               <h4>Larger storage</h4>
               <p>Extra 1TB of cloud save</p>
             </div>
             <p>+$2/mo</p>
           </div>
-          <div class="card2">
-            <input type="checkbox" id="checkId">
-            <label for="checkId" class="check-box" ></label>
+          <div class="card-addOn card-addOn3">
+            <input type="checkbox" id="checkId3">
+            <label for="checkId3" class="check-box" ></label>
             <div class="card-info">
               <h4>Customizable profile</h4>
               <p>Custom theme on your profile</p>
@@ -120,10 +122,15 @@
         </div>
       </div>
 
+       <!-- ----Section-5---- -->
+
       <div class="section4">
         <h1>Finshing up</h1>
         <p>Double-check everything looks OK before confirming.</p>
+
       </div>
+
+      <!-- ---Section-5---- -->
 
       <div class="section5">
         <img src="./assets/images/icon-thank-you.svg" alt="" />

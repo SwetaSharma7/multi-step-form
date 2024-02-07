@@ -1,5 +1,5 @@
 :root {
-  --Marine-blue: hsl(213, 96%, 18%);
+  --Marine-blue: hsl(213, 89%, 11%);
   --Purplish-blue: hsl(243, 100%, 62%);
   --Pastel-blue: hsl(228, 100%, 84%);
   --Light-blue: hsl(206, 94%, 87%);
@@ -38,8 +38,14 @@ body {
 .btn {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  /* width: 60%; */
   margin-top: 2rem;
+  gap: 2rem;
+}
+
+#btn1{
+  background-color: var(--Light-blue);
+  color: var(--Marine-blue);
 }
 
 .btn div{
@@ -49,11 +55,6 @@ body {
   border: 1.5px solid white;
   padding: 0.8rem 1.1rem;
   font-weight: 700;
-}
-
-.btn button:hover {
-  color: var(--Marine-blue);
-  background-color: var(--Light-blue);
 }
 
 /* -----SECTION-1 (1st Page)-----*/
@@ -117,9 +118,9 @@ form label {
   gap: 1.5rem;
   margin: 1rem 0;
 }
-.section2 .card:hover {
-  border: 1px solid rgb(9, 9, 114);
-  background-color: var(--Light-gray);
+.section2 .card:hover, .card2:hover {
+  border: 1.5px solid rgb(41, 41, 206);
+
 }
 
 img {
@@ -192,7 +193,7 @@ img {
   margin: 15% 0;
 }
 
-.card2 {
+.card-addOn {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -200,6 +201,9 @@ img {
   border-radius: 0.5rem;
   padding: 1rem;
   margin: 1rem 0;
+}
+.card-addOn:hover{
+  border: 1.6px solid rgba(18, 18, 211, 0.575);
 }
 
 .card-info {
