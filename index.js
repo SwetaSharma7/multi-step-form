@@ -27,6 +27,7 @@ function togglePrices() {
 const nextBtn = document.querySelector(".footer-btn");
 const prevBtn = document.querySelector(".goBack");
 const confirmBtn = document.querySelector(".confirmBtn");
+const footer = document.querySelector('.footer');``
 let currentSectionIndex = 1;
 
 //  --- logic for both Next Step and Go BAck button---
@@ -223,7 +224,7 @@ selected.addEventListener("click", (e) => {
   pro.style.backgroundColor = "";
 
   if (target.matches(".card1")) {
-    arcade.style.borderColor = "hsl(213, 89%, 11%";
+    arcade.style.borderColor = "rgb(41, 41, 206)";
     arcade.style.backgroundColor = "var(--Light-blue)";
 
     if (checkbox.checked) {
@@ -235,10 +236,10 @@ selected.addEventListener("click", (e) => {
       headingPrice.textContent = "$9/mo";
       section2Price = 9;
     }
-    heading.style.display = "block";
+    heading.style.display = "flex";
     part2.style.display = "flex";
   } else if (target.matches(".card2")) {
-    advanced.style.borderColor = "hsl(213, 89%, 11%";
+    advanced.style.borderColor = "rgb(41, 41, 206)";
     advanced.style.backgroundColor = "var(--Light-blue)";
 
     if (checkbox.checked) {
@@ -250,10 +251,10 @@ selected.addEventListener("click", (e) => {
       headingPrice.textContent = "$12/mo";
       section2Price = 12;
     }
-    heading.style.display = "block";
+    heading.style.display = "flex";
     part2.style.display = "flex";
   } else if (target.matches(".card3")) {
-    pro.style.borderColor = "hsl(213, 89%, 11%";
+    pro.style.borderColor = "rgb(41, 41, 206)";
     pro.style.backgroundColor = "var(--Light-blue)";
 
     if (checkbox.checked) {
@@ -265,7 +266,7 @@ selected.addEventListener("click", (e) => {
       headingPrice.textContent = "$15/mo";
       section2Price = 15;
     }
-    heading.style.display = "block";
+    heading.style.display = "flex";
     part2.style.display = "flex";
   }
 });
@@ -296,7 +297,7 @@ selectp.addEventListener("click", (e) => {
       onlineP.textContent = "+$1/mo";
       section3Price += 1;
     }
-    onlineH.style.display = "block";
+    onlineH.style.display = "flex";
   }
   const storage = document.querySelector(".card-addOn2");
   if (target.matches("#checkId2")) {
@@ -309,7 +310,7 @@ selectp.addEventListener("click", (e) => {
       largeP.textContent = "+$2/mo";
       section3Price += 2;
     }
-    large.style.display = "block";
+    large.style.display = "flex";
   }
   const profile = document.querySelector(".card-addOn3");
   if (target.matches("#checkId3")) {
@@ -321,18 +322,20 @@ selectp.addEventListener("click", (e) => {
       customizableP.textContent = "+$2/mo";
       section3Price += 2;
     }
-    customizable.style.display = "block";
+    customizable.style.display = "flex";
   }
   if (checkbox.checked) {
     totalPrice.textContent = `$${section2Price + section3Price}/yr`;
+    totalPrice.style.color = "hsl(243, 100%, 62%)";
   } else {
     totalPrice.textContent = `$${section2Price + section3Price}/mo`;
+    totalPrice.style.color= "hsl(243, 100%, 62%)";
   }
 });
 
 function toogleColor(changing) {
   if (changing.style.borderColor == "") {
-    changing.style.borderColor = "var(--Marine-blue)";
+    changing.style.borderColor = "rgb(41, 41, 206)";
     changing.style.backgroundColor = "var(--Light-blue)";
   } else {
     changing.style.borderColor = "";
