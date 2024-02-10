@@ -19,3 +19,30 @@ btn.addEventListener("click" , (e) => {
   color: var(--Marine-blue);
   background-color: var(--Light-blue);
 }
+
+
+
+// ----Logic for changing monthlly and yearly plan for section-3 if next button is clicked----
+
+
+    const checkbox = document.getElementById("check");
+    const month = document.querySelectorAll(".mon");
+    const year = document.querySelectorAll(".yr");
+        
+        if (checkbox.checked) {
+            // If checkbox is checked, display year and hide month
+            for (let i = 0; i < month.length; i++) {
+                month[i].style.display = "none";
+            }
+            for (let i = 0; i < year.length; i++) {
+                year[i].style.display = "block";
+            }
+        } else {
+            // If checkbox is not checked, display month and hide year
+            for (let i = 0; i < month.length; i++) {
+                month[i].style.display = "block";
+            }
+            for (let i = 0; i < year.length; i++) {
+                year[i].style.display = "none";
+            }
+        }

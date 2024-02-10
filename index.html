@@ -22,132 +22,168 @@
         <div id="btn3">3</div>
         <div id="btn4">4</div>
       </div>
-      <div class="section1">
-        <h1>Personal info</h1>
-        <p>Please provide your name, emai address, and phone number.</p>
-        <form action="#" method="post">
-          <!-- <label for="error">This is required</label><br> -->
-          <label for="name">Name</label><br />
-          <input type="text" id="name" name="name" placeholder="e.g. Stephen King" required /><br />
-          <label for="email">Email Address</label><br />
-          <input type="email " id="email" name="email" placeholder="e.g. Stephenking@lorem.com" required /><br />
-          <label for="phone">Phone Number</label><br />
-          <input form="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 890" required /><br />
-        </form>
-      </div>
+      <div class="container2">
 
-      <div class="section2">
-        <h1>Select your plan</h1>
-        <p>You have the option of monthly or yearly biling.</p>
-        <div class="cards">
-          <div class="card card1">
-            <img src="/assets/images/icon-arcade.svg" alt="" />
-            <div class="card-info">
-              <h4 class="arcade">Arcade</h4>
-              <p class="monthly">$9/mo</p>
-              <p class="yearly">
-                $90/mo <br />
-                2 months free
-              </p>
+        <!-- --section-1-- -->
+
+        <div class="section1">
+          <h1>Personal info</h1>
+          <p>Please provide your name, emai address, and phone number.</p>
+          <form action="#" method="post">
+            <div>
+              <label for="error" id="nameError">This is required</label><br />
+              <label for="name">Name</label><br />
+              <input type="text" id="name" name="name" placeholder="e.g. Stephen King" required /><br />
+            </div>
+            <div>
+              <label for="error" id="emailError">This is required</label><br />
+              <label for="email">Email Address</label><br />
+              <input type="email " id="email" name="email" placeholder="e.g. Stephenking@lorem.com" required /><br />
+            </div>
+            <div>
+              <label for="error" id="phoneError">This is required</label><br />
+              <label for="phone">Phone Number</label><br />
+              <input type="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 890" required /><br />
+            </div>
+          </form>
+        </div>
+
+        <div class="section2">
+          <h1>Select your plan</h1>
+          <p>You have the option of monthly or yearly biling.</p>
+          <div class="cards">
+            <div class="card card1">
+              <img src="/assets/images/icon-arcade.svg" alt="" />
+              <div class="card-info">
+                <h4 class="arcade">Arcade</h4>
+                <p class="monthly">$9/mo</p>
+                <p class="yearly">
+                  $90/yr <br />
+                  2 months free
+                </p>
+              </div>
+            </div>
+            <div class="card card2">
+              <img src="/assets/images/icon-advanced.svg" alt="" />
+              <div class="card-info">
+                <h4 class="advanced">Advanced</h4>
+                <p class="monthly">$12/mo</p>
+                <p class="yearly">
+                  $120/yr <br />
+                  2 months free
+                </p>
+              </div>
+            </div>
+            <div class="card card3">
+              <img src="/assets/images/icon-pro.svg" alt="" />
+              <div class="card-info">
+                <h4 class="pro">Pro</h4>
+                <p class="monthly">$15/mo</p>
+                <p class="yearly">
+                  $150/yr <br />
+                  2 months free
+                </p>
+              </div>
             </div>
           </div>
-          <div class="card card2">
-            <img src="/assets/images/icon-advanced.svg" alt="" />
-            <div class="card-info">
-              <h4 class="advanced">Advanced</h4>
-              <p class="monthly">$12/mo</p>
-              <p class="yearly">
-                $1200/mo <br />
-                2 months free
-              </p>
+
+          <div class="option">
+            <h3>Monthly</h3>
+            <div class="toggler">
+              <input type="checkbox" id="check" />
+              <label for="check" class="toggler-btn" onclick="togglePrices()"></label>
             </div>
+            <h3>Yearly</h3>
           </div>
-          <div class="card card3">
-            <img src="/assets/images/icon-pro.svg" alt="" />
-            <div class="card-info">
-              <h4 class="pro">Pro</h4>
-              <p class="monthly">$15/mo</p>
-              <p class="yearly">
-                $150/mo <br />
-                2 months free
-              </p>
+        </div>
+
+        <!-- section 3 -->
+
+        <div class="section3">
+          <h1>Pick add-ons</h1>
+          <p>Add-ons help enhance your gaming experience.</p>
+          <div class="cards cardAddOn">
+            <div class="card-addOn card-addOn1">
+              <input type="checkbox" id="checkId1" />
+              <label for="checkId1" class="check-box"></label>
+              <div class="card-info">
+                <h4>Online service</h4>
+                <p>Acess to multipliplayer games</p>
+              </div>
+              <p class="mon">+$1/mo</p>
+              <p class="yr">+$10/yr</p>
+            </div>
+            <div class="card-addOn card-addOn2">
+              <input type="checkbox" id="checkId2" />
+              <label for="checkId2" class="check-box"></label>
+              <div class="card-info">
+                <h4>Larger storage</h4>
+                <p>Extra 1TB of cloud save</p>
+              </div>
+              <p class="mon">+$2/mo</p>
+              <p class="yr">+$20/yr</p>
+            </div>
+            <div class="card-addOn card-addOn3">
+              <input type="checkbox" id="checkId3" />
+              <label for="checkId3" class="check-box"></label>
+              <div class="card-info">
+                <h4>Customizable profile</h4>
+                <p>Custom theme on your profile</p>
+              </div>
+              <p class="mon">+$2/mo</p>
+              <br />
+              <p class="yr">+$20/yr</p>
             </div>
           </div>
         </div>
 
-        <div class="option">
-          <h3>Monthly</h3>
-          <div class="toggler">
-            <input type="checkbox" id="check" />
-            <label for="check" class="toggler-btn" onclick="togglePrices()"></label>
-          </div>
-          <h3>Yearly</h3>
-        </div>
-      </div>
+        <!-- ----Section-4---- -->
 
-      <!-- section 3 -->
-
-      <div class="section3">
-        <h1>Pick add-ons</h1>
-        <p>Add-ons help enhance your gaming experience.</p>
-        <div class="cards cardAddOn">
-          <div class="card-addOn card-addOn1">
-            <input type="checkbox" id="checkId1">
-            <label for="checkId1" class="check-box" ></label>
-            <div class="card-info">
-              <h4>Online service</h4>
-              <p>Acess to multipliplayer games</p>
+        <div class="section4">
+          <h1>Finshing up</h1>
+          <p>
+            Double-check everything looks OK <br />
+            before confirming.
+          </p>
+          <div class="part1">
+            <div class="heading">
+              <h5>Arcade(Monthly)</h5>
+              <p>$9/mo</p>
             </div>
-            <p>+$1/mo</p>
-            
+            <div class="online">
+              <h5>online service</h5>
+              <p>+$1/mo</p>
+            </div>
+            <div class="larger">
+              <h5>Larger storage</h5>
+              <p>+$2/mo</p>
+            </div>
+            <div class="customizable">
+              <h5>Customizable profile</h5>
+              <p>+$3/mo</p>
+            </div>
           </div>
-          <div class="card-addOn card-addOn2">
-            <input type="checkbox" id="checkId2">
-            <label for="checkId2" class="check-box" ></label>
-            <div class="card-info">
-              <h4>Larger storage</h4>
-              <p>Extra 1TB of cloud save</p>
-            </div>
-            <p>+$2/mo</p>
-          </div>
-          <div class="card-addOn card-addOn3">
-            <input type="checkbox" id="checkId3">
-            <label for="checkId3" class="check-box" ></label>
-            <div class="card-info">
-              <h4>Customizable profile</h4>
-              <p>Custom theme on your profile</p>
-            </div>
-            <p>+$2/mo</p>
+          <div class="part2">
+            <h5>Total(per month)</h5>
+            <p class="total-price">+$0</p>
           </div>
         </div>
-      </div>
 
-       <!-- ----Section-5---- -->
+        <!-- ---Section-5---- -->
 
-      <div class="section4">
-        <h1>Finshing up</h1>
-        <p>Double-check everything looks OK before confirming.</p>
-
-      </div>
-
-      <!-- ---Section-5---- -->
-
-      <div class="section5">
-        <img src="./assets/images/icon-thank-you.svg" alt="" />
+        <div class="section5">
+          <img src="./assets/images/icon-thank-you.svg" alt="" />
           <div class="header">
             <h1 class="title">Thank you!</h1>
-            <p class="exp">
-              Thanks for confirming your subscription! We hope you have fun
-              using our platform. If you ever need support, please feel free to
-              email us at support@loremgaming.com.
-            </p>
+            <p class="exp">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
           </div>
-      </div>
+        </div>
 
-      <footer class="footer">
-        <button class="goBack">Go Back</button>
-        <button class="footer-btn">Next Step</button>
-      </footer>
+        <footer class="footer">
+          <button class="goBack">Go Back</button>
+          <button class="footer-btn">Next Step</button>
+        </footer>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>
