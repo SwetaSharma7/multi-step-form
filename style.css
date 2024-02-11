@@ -226,7 +226,7 @@ img {
   padding: 1rem;
   margin: 1rem 0;
 }
-.mon, .yr{
+#price{
   float: right;
 }
 .card-addOn:hover {
@@ -404,13 +404,16 @@ footer .goBack {
     /* padding: 4rem 2rem; */
     font-size: large;
   }
+  .section2,
+  .section3,
+  .section4,
+  .section5 {
+    display: none;
+  }
   .container2 {
     padding: 0;
     position: relative;
   }
-  /* section3{
-    
-  } */
   .section2 .card:hover,
   .card2:hover {
     border: 3px solid rgb(41, 41, 206);
