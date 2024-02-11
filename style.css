@@ -219,12 +219,15 @@ img {
 
 .card-addOn {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   gap: 1rem;
   border: 3px solid gray;
   border-radius: 0.5rem;
   padding: 1rem;
   margin: 1rem 0;
+}
+.mon, .yr{
+  float: right;
 }
 .card-addOn:hover {
   border: 3px solid rgba(18, 18, 211, 0.575);
@@ -405,6 +408,9 @@ footer .goBack {
     padding: 0;
     position: relative;
   }
+  /* section3{
+    
+  } */
   .section2 .card:hover,
   .card2:hover {
     border: 3px solid rgb(41, 41, 206);
@@ -412,4 +418,12 @@ footer .goBack {
   .card-addOn:hover {
     border: 3px solid rgba(18, 18, 211, 0.575);
   }
+/* hover */
+#btn1:hover,
+  #btn2:hover,
+  #btn3:hover,
+  #btn4:hover, .footer-btn:hover, .goBack:hover, .card, .card-addOn:hover{
+  cursor: pointer;
+}
+
 }
