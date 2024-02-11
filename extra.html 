@@ -46,3 +46,198 @@ btn.addEventListener("click" , (e) => {
                 year[i].style.display = "none";
             }
         }
+
+
+
+
+
+
+gautoom
+
+        /* ---Desktop Site */
+
+@media (min-width: 1000px) {
+  body {
+    background-color: var(--Light-blue);
+  }
+
+  .container1{
+    flex-direction: row;
+    background-image: none;
+    background-color: white;
+    justify-content: center;
+    height: 80vh;
+    width: 80vw;
+    margin: 10vh 10vw;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .info{
+    display: block;
+  }
+  .btn{
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    margin-top: 0;
+    background: url(/assets/images/bg-sidebar-desktop.svg) no-repeat;
+    background-size: cover;
+    justify-content: flex-start;
+    padding: 5% 2.5%;
+  }
+  .btn .info{
+    border: none;
+    background-color: transparent;
+  }
+  #btn1, #btn2,
+  #btn3, #btn4{
+    width: fit-content;
+  }
+  .footer{
+    padding: 1rem;
+    background-color: white;
+  }
+  .footer .footer-btn,
+  .footer .goBack {
+    margin: 0;
+  }
+  .section1, 
+  .section2, 
+  .section3, 
+  .section4, 
+  .section5 {
+    margin: 0;
+    box-shadow: none;
+  }
+  .container2 {
+    padding: 0;
+  }
+  .section2 .card:hover,
+  .card2:hover {
+    border: 3px solid rgb(41, 41, 206);
+  }
+  .card-addOn:hover {
+    border: 3px solid rgba(18, 18, 211, 0.575);
+  }
+}
+
+
+<!-- <div class="indicator">
+        <div class="btn">
+          <div id="btn1">1</div>
+          <div id="btn2">2</div>
+          <div id="btn3">3</div>
+          <div id="btn4">4</div>
+        </div>
+  
+        <div class="information">
+          <div class="info">
+            <h5>Step 1</h5>
+            <label>YOUR INFO</label>
+          </div>
+          <div class="info">
+            <h5>Step 2</h5>
+            <label>SELECT INFO</label>
+          </div>
+          <div class="info">
+            <h5>Step 3</h5>
+            <label>ADD- ONS</label>
+          </div>
+          <div class="info">
+            <h5>Step 4</h5>
+            <label>SUMMARY</label>
+          </div>
+        </div>
+      </div> -->
+
+
+
+pavani  
+
+
+      @media (min-width: 1000px) {
+  body {
+    background-color: var(--Light-blue);
+  }
+
+  .container1{
+    flex-direction: row;
+    background-image: none;
+    background-color: white;
+    justify-content: center;
+    height: 80vh;
+    width: 80vw;
+    margin: 10vh 10vw;
+    padding: 1rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  
+  }
+  .info{
+    display: block;
+  }
+  .container2{
+    box-shadow: none;
+  }
+  .btn{
+    display: flex;
+    flex-direction: row;
+    /* width: 40%; */
+    height: 100%;
+    margin-top: 0;
+    background: url(/assets/images/bg-sidebar-desktop.svg) no-repeat;
+    background-size: cover;
+    justify-content: flex-start;
+    gap:30px;
+  }
+  .btn{
+    flex-direction: column;
+    background-color: red;
+    margin: 0;
+  }
+
+  .information{
+    margin-top: 2rem;
+   display: flex;
+   flex-direction: column;
+    /* background-color: red; */
+  }
+
+  .info{
+    margin-bottom: 7rem;
+  }
+  #btn1, #btn2,
+  #btn3, #btn4{
+    width: fit-content;
+  }
+  .footer{
+    padding: 1rem;
+    background-color: white;
+    position: absolute;
+
+  }
+  .footer .footer-btn,
+  .footer .goBack {
+    margin: 0;
+  }
+  .section1, 
+  .section2, 
+  .section3, 
+  .section4, 
+  .section5 {
+    margin: 0;
+    box-shadow: none;
+  }
+  .container2 {
+    padding: 0;
+    position: relative;
+  }
+  .section2 .card:hover,
+  .card2:hover {
+    border: 3px solid rgb(41, 41, 206);
+  }
+  .card-addOn:hover {
+    border: 3px solid rgba(18, 18, 211, 0.575);
+  }
+}
+
